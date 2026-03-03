@@ -44,7 +44,9 @@ buildImage.groovy
  git init
  git add README.md
  git commit -m "Initial commit"
- git remote add origin https://github.com/fsiegrist/devops-bootcamp-jenkins-shared-library.git
+ git remote add origin https://github.com/bigtony79/jenkins-08-shared-library.git
  git push -u origin main
+```
+
 
 ### Step 2 - 
