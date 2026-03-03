@@ -15,16 +15,17 @@ Create a Jenkins Shared Library (JSL) to extract common build logic:
 * Create a new private repository in GitHub for Jenkins Shared Library and assign a name such as "jenkins-shared-library".
 * Create a Groovy project for the JSL using VSCode or IntelliJ and create a separate **vars** folder which will store the Groovy files for each function that we call from Jenkinsfile.
 * Create the following buildJar.groovy and buildImage.groovy files and save them in the **vars** folder.
+  buildJar.groovy
 ```
     #!/usr/bin/env groovy
-    //buildJar.groovy
-  
+   
     def call() {
      echo " building the application for branch $GIT_BRANCH...."
      sh 'mvn package'
  }
 ```
- ```
+buildImage.groovy
+```
   #!/usr/bin/env groovy
 
   def call(String imageName) {
@@ -35,9 +36,8 @@ Create a Jenkins Shared Library (JSL) to extract common build logic:
                 sh "docker build -t $imageName ."
                 sh "docker push $imageName"
             }
- } 
- ```
-
+ }
+```
 * Push the project to the newly created repository
 
 ### Step 2 - 
