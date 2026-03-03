@@ -62,6 +62,18 @@ buildImage.groovy
 ## Step 3 - Use Shared Library in Jenkinsfile
 In this step, we are going to make changes to the Jenkinsfile in our Java maven app (https://github.com/bigtony79/java-maven-app.git) to use the above two functions.
 * Let's create a new branch from main branch of the Java maven app repository called 'jenkins-shared-lib' where we will test the functionality of Jenkins Shared Library
+* Open the Jenkinsfile under the branch 'jenkins-shared-lib' and the following code on top of the file
+```
+  #!/user/bin/env groovy
+  @Library('jenkins-shared-library')_
+```
+
+
+
+
+
+
+
 
   
 
