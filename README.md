@@ -5,7 +5,16 @@ This project provides a reusable Jenkins Shared Library designed to centralize a
 Jenkins, Groovy, Docker, Git, Java, Maven
 
 ## Project Description: 
-Create a Jenkins Shared Library to extract common build logic: 
+Create a Jenkins Shared Library (JSL) to extract common build logic: 
  -  Create separate Git repository for Jenkins Shared Library project
  -  Create functions in the JSL to use in the Jenkins pipeline
  -  Integrate and use the JSL in Jenkins Pipeline (globally and for a specific project in Jenkinsfile)
+
+## Steps
+### Step 1 - Create the Shared Library Repository
+* Create a new private repository in GitHub for Jenkins Shared Library and assign a name such as "jenkins-shared-library"/
+* Create a Groovy project for the JSL using VSCode or IntelliJ and create a separate vars folder which will store the Groovy files for each function that we call from Jenkinsfile
+*   
+* Push the project to the newly created repository
+
+### Step 2 - 
