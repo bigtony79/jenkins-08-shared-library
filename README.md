@@ -49,4 +49,5 @@ buildImage.groovy
 ```
 
 
-### Step 2 - 
+### Step 2 - Make SharedLibrary globally available
+* 
