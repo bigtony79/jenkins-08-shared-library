@@ -67,6 +67,25 @@ In this step, we are going to make changes to the Jenkinsfile in our Java maven 
   #!/user/bin/env groovy
   @Library('jenkins-shared-library')_
 ```
+* Modify the Jenkinsfile by adding function calls to the Shared Libary Groovy scripts for the 'Build Jar' and 'Build Image' stages:
+```
+  stage('Build Jar') {
+      steps {
+        script {
+          buildJar()
+        }
+      }
+    }
+    
+    stage('Build Image') {
+      steps {
+        script {
+          buildImage("bigtony79/java-maven-app:${GIT_BRANCH}")
+        }
+      }
+    }
+``` 
+
 
 
 
