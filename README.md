@@ -57,6 +57,7 @@ buildImage.groovy
 * Select 'Modern SCM' for Retrieval method and 'Git' for Source Code Management
 * Enter the GitHub Repository endpoint (https://github.com/bigtony79/jenkins-08-shared-library.git) and select the appropriate credentials
 * Click Apply and Save the configuration
+  [alt text](images/image1.png)
   
 
 
