@@ -80,7 +80,7 @@ In this step, we are going to make changes to the Jenkinsfile in our Java maven 
     stage('Build Image') {
       steps {
         script {
-          buildImage("bigtony79/java-maven-app:${GIT_BRANCH}")
+          buildImage()
         }
       }
     }
