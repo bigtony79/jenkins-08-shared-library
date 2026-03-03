@@ -49,7 +49,7 @@ buildImage.groovy
 ```
 
 
-### Step 2 - Make SharedLibrary globally available
+### Step 2 - Make the Shared Library globally available
 * Go to 'Manage Jenkins' and click on System
 * Scroll down to 'Global Trusted Pipeline Libraries' section and click Add
 * Enter a name such as 'jenkins-shared-library'
@@ -58,6 +58,11 @@ buildImage.groovy
 * Enter the GitHub Repository endpoint (https://github.com/bigtony79/jenkins-08-shared-library.git) and select the appropriate credentials
 * Click Apply and Save the configuration
   ![alt text](images/image1.png)
+
+## Step 3 - Use Shared Library in Jenkinsfile
+In this step, we are going to make changes to the Jenkinsfile in our Java maven app (https://github.com/bigtony79/java-maven-app.git) to use the above two functions.
+* Let's create a new branch from main branch of the Java maven app repository called 'jenkins-shared-lib' where we will test the functionality of Jenkins Shared Library
+
   
 
 
