@@ -42,7 +42,7 @@ buildImage.groovy
 * Push the project to the newly created repository
 ```
  git init
- git add README.md
+ git add .
  git commit -m "Initial commit"
  git remote add origin https://github.com/bigtony79/jenkins-08-shared-library.git
  git push -u origin main
