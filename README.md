@@ -85,7 +85,12 @@ In this step, we are going to make changes to the Jenkinsfile in our Java maven 
       }
     }
 ``` 
-
+* Push the changes to the remote repository
+```
+ git add Jenkinsfile
+ git commit -m "Updated Jenkinsfile to use Jenkins Shared Library functions"
+ git push origin jenkins-shared-lib
+```
 
 
 
