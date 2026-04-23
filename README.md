@@ -91,6 +91,12 @@ In this step, we are going to make changes to the Jenkinsfile in our Java maven 
  git commit -m "Updated Jenkinsfile to use Jenkins Shared Library functions"
  git push origin jenkins-shared-lib
 ```
+* Create a new Jenkins pipeline job and point it to the 'jenkins-shared-lib' branch of the Java maven app repository
+* Run the pipeline and observe that the stages are executed successfully using the functions from the Jenkins Shared Library
+  ![alt text](images/image2.png)
+
+### Conclusion
+By creating a Jenkins Shared Library, we have centralized common pipeline logic, making it easier to maintain and reuse across multiple Jenkins jobs. This approach promotes consistency and reduces duplication in our CI/CD pipelines, ultimately improving efficiency and maintainability.
 
 
 
